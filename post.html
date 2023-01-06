@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/scripts.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <p id="loading">Loading</p>
+  <div id="post" class="hide">
+    <a href="index.html">Back</a>
+    <div id="post-container"></div>
+    <h2>Comments</h2>
+    <form id="comment-form">
+      <div>
+        <label for="email">Your best Email</label>
+        <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Email" 
+        required
+        >
+      </div>
+      <div>
+        <label for="body">Your Comment</label>
+        <textarea  
+        name="body"  
+        id="body" 
+        placeholder="Let your Comment" 
+        required
+        ></textarea>
+      </div>
+      <input type="submit" value="Send">
+    </form>
+    <div id="comments-container"></div>
+  </div>
+</body>
+</html>
